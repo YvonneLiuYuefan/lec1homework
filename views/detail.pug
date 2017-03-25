@@ -1,0 +1,23 @@
+extends layout
+block content
+    h1="StudentList"
+    table
+        tr
+            th Name
+            th Price
+            th Description
+            th Image
+            th Stock Number
+            th Sale
+
+        tr
+            td=product.name
+            td=product.price
+            td=product.description
+            td=product.imageUrl
+            td=product.stock
+            td=product.onSale
+
+    a(href='../') Back
+    br
+    a(href='/update/' + product._id) update

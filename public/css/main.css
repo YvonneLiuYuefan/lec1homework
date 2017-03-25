@@ -1,0 +1,22 @@
+body {
+    background: black;
+    color: white;
+
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+     width: 100px;
+     padding: 10px;
+ }
+table, td, th{
+    padding:10px;
+
+}
+a {
+    color: #f0f0f0;
+}

@@ -1,0 +1,22 @@
+extends layout
+block content
+    h2 Update Detail
+    form(method="POST", action=action )
+            input(placeholder="Name" name="name" value=product.name)
+            br
+            input(placeholder="Price" name="price" value=product.price)
+            br
+            input(placeholder="Description" name="description" value=product.description)
+            br
+            input(placeholder="ImageUrl" name="imageUrl" value=product.imageUrl)
+            br
+            input(placeholder="Stock" name="stock" value=product.stock)
+            br
+            input(type="radio" name="onSale" value="true")
+            span on sale
+            br
+            input(type="radio" name="onSale" value="false")
+            span not on sale
+            br
+            input(type="submit", value="submit")
+    a(href='../') Back

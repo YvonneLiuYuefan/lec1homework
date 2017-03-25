@@ -1,0 +1,18 @@
+extends layout
+block content
+    h2="ProductList"
+    a(href='../new') Add New Product
+    table
+        tr
+            th Name
+        each product in productlist
+            tr
+                //td=student.name
+                td
+                    a(href=product._id)=product.name
+                td
+                    a(href='/delete/' + product._id) Delete
+                    // form(method="POST" action="/delete")
+                    //  input()
+        //p=student.name
+        //p=studentlist
